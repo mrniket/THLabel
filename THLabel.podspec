@@ -7,7 +7,8 @@ Pod::Spec.new do |s|
   s.license      = 'zlib'
   s.author       = { 'Tobias Hagemann' => 'tobias.hagemann@gmail.com' }
   s.source       = { :git => 'https://github.com/MuscleRumble/THLabel.git', :tag => s.version.to_s }
-  s.platform     = :ios, '4.0'
+  s.ios.deployment_target = '4.0'
+  s.tvos.deployment_target = '9.0'
   s.source_files = 'THLabel'
   s.framework    = 'CoreText'
   s.requires_arc = true
